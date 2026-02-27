@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>SkyCast | Cosmic Weather</title>
+    <meta name="description" content="A feature-rich cosmic weather dashboard.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+
+    <div class="app-container">
+        <header class="cosmic-header">
+            <h1 class="logo">SkyCast</h1>
+            <div class="history-wrapper">
+                <span class="history-label">Recently Searched:</span>
+                <div id="history-container" class="history-list"></div>
+            </div>
+        </header>
+
+        <main>
+            <section class="search-section">
+                <div class="search-box">
+                    <input type="text" id="cityInput" placeholder="Locate sector..." aria-label="City name"
+                        autocomplete="off">
+                    <button id="searchButton" type="button">Explore</button>
+                    <div id="suggestionsList" class="suggestions-dropdown hidden"></div>
+                </div>
+            </section>
+
+            <section id="weatherDisplay" class="weather-display hidden">
+                <div id="weatherCard" class="weather-card">
+                    <div class="main-info">
+                        <div class="location-box stagger-1">
+                            <h2 id="cityName">---</h2>
+                            <p id="locationDetails">---</p>
+                            <span id="localTime" class="time-stamp">---</span>
+                        </div>
+
+                        <div class="main-temp-box stagger-2">
+                            <span id="temperature">--</span><span class="deg">°</span>
+                            <p id="description" class="weather-desc">---</p>
+                        </div>
+                    </div>
+
+                    <div class="data-grid">
+                        <div class="info-tile stagger-3">
+                            <label>Feels Like</label>
+                            <span id="feelsLike">--°</span>
+                        </div>
+                        <div class="info-tile stagger-4">
+                            <label>UV Index</label>
+                            <span id="uvIndex">--</span>
+                        </div>
+                        <div class="info-tile stagger-5">
+                            <label>Humidity</label>
+                            <span id="humidity">--%</span>
+                        </div>
+                        <div class="info-tile stagger-6">
+                            <label>Wind</label>
+                            <span id="wind">-- km/h <small id="windDir"></small></span>
+                        </div>
+                        <div class="info-tile stagger-7">
+                            <label>Pressure</label>
+                            <span id="pressure">-- mb</span>
+                        </div>
+                        <div class="info-tile stagger-8">
+                            <label>Visibility</label>
+                            <span id="visibility">-- km</span>
+                        </div>
+                        <div class="info-tile stagger-9">
+                            <label>Precip</label>
+                            <span id="precip">-- mm</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div id="loader" class="loader hidden">Pulsing signal...</div>
+            <div id="errorState" class="error-msg hidden">Sector signal lost.</div>
+        </main>
+
+        <footer>
+            <p>Made with ❤️ by Aman deep</p>
+        </footer>
+    </div>
+
+
+
+
+    <script src="apis.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
