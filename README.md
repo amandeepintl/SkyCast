@@ -13,12 +13,8 @@
 
 ### 🌌 Desktop Interface
 <p align="center">
-  <img src="screenshots/Screenshot1.png" width="45%" alt="Dashboard View 1">
-  <img src="screenshots/Screenshot2.png" width="45%" alt="Dashboard View 2">
-</p>
-<p align="center">
-  <img src="screenshots/Screenshot3.png" width="45%" alt="Dashboard View 3">
-  <img src="screenshots/Screenshot4.png" width="45%" alt="Dashboard View 4">
+  <img src="screenshots/Screenshot1.png" >
+  <img src="screenshots/Screenshot2.png" >
 </p>
 
 *The main dashboard featuring a frosted-glass aesthetic and an animated 3D starfield.*
