@@ -51,5 +51,5 @@ The project follows a zero-exposure policy for API keys. All keys are stored in 
 
 1. **Clone the Project**
    ```bash
-   git clone [https://github.com/amandeepintl/SkyCast.git](https://github.com/amandeepintl/SkyCast.git)
+   git clone https://github.com/amandeepintl/SkyCast.git
    cd SkyCast
