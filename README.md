@@ -37,6 +37,7 @@
 SkyCast leverages two distinct APIs for a seamless experience:
 * **Weatherstack API:** Delivers accurate, real-time weather data.
 * **Open-Meteo API:** Powers the intelligent city suggestion and geocoding system.
+* **Usage of Ai :** For better code quality and other stuff
 
 ### 🔐 Security Layer
 The project follows a zero-exposure policy for API keys. All keys are stored in a local `apis.js` file, which is protected via `.gitignore` to prevent unauthorized usage.
